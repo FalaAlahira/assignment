@@ -64,3 +64,46 @@ hr.divider {
     padding: 0px 50px 0px 50px;
 }
   
+.body{
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.row{
+  display: flex;
+  gap: 200px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.person {
+  background-color: #EDF7FA;
+  margin-top: -25px;
+  padding-bottom: 50px;
+  margin-bottom: -25px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.row1 {
+  display: flex;
+  
+}
+
+.edu {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.yoo{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.end {
+  padding-left: 50px;
+  padding-right: 50px;
+}

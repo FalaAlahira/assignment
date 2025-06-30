@@ -1,3 +1,39 @@
+/* General layout */
+.body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Adjust container width based on screen size */
+@media (min-width: 768px) {
+  .body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .body {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+/* Divider line */
+hr.divider {
+  border-top: 1px solid #dcdcdc;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Profile image */
+.profile-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Social icons */
 ul.social-icons {
   padding: 0;
 }
@@ -17,15 +53,14 @@ ul.social-icons {
   font-family: arial;
   color: #fff;
 }
-
 .social-icons li:hover a {
   transform: scale(1.15);
 }
 .social-icons .linkedin {
-  background: #4875B4;
+  background: #4875b4;
 }
 .social-icons .twitter {
-  background: #33CCFF;
+  background: #33ccff;
 }
 .social-icons .medium {
   background: #2f2f2f;
@@ -34,76 +69,139 @@ ul.social-icons {
   background: #6e5494;
 }
 .social-icons .mail {
-    background: #B20000;
-  }
-
-hr.divider {
-  border-top: 1px solid #DCDCDC;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  background: #b20000;
 }
 
-.personal-statement {
-  text-align: justify;
-}
-
-.description-text {
-    text-align: justify;
-  }
-
-.profile-image{
-    height: 200px;
-    width: 200px;
-    align-content: center
-}
-
-.top-col{
-    /* padding: 50px;
-    padding-bottom: 0px; */
-    margin-top: 15px;
-    padding: 0px 50px 0px 50px;
-}
-  
-.body{
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-.row{
-  display: flex;
-  gap: 200px;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
+/* Section backgrounds */
 .person {
-  background-color: #EDF7FA;
-  margin-top: -25px;
-  padding-bottom: 50px;
-  margin-bottom: -25px;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  background-color: #edf7fa;
+  padding: 50px;
+  margin: -25px 0;
 }
 
-.row1 {
-  display: flex;
-  
-}
-
-.edu {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.yoo{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
+.edu,
+.yoo,
 .end {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+/* Two-column layout for modules */
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row1 > div {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Text alignment */
+.personal-statement,
+.description-text {
+  text-align: justify;
+}
+/* General layout */
+.body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Adjust container width based on screen size */
+@media (min-width: 768px) {
+  .body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .body {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+/* Divider line */
+hr.divider {
+  border-top: 1px solid #dcdcdc;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Profile image */
+.profile-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Social icons */
+ul.social-icons {
+  padding: 0;
+}
+.social-icons li {
+  list-style: none;
+  display: inline-block;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.social-icons li a {
+  display: block;
+  padding: 0.3em;
+  max-width: 2em;
+  min-width: 2em;
+  height: 2em;
+  line-height: 1.5em;
+  font-family: arial;
+  color: #fff;
+}
+.social-icons li:hover a {
+  transform: scale(1.15);
+}
+.social-icons .linkedin {
+  background: #4875b4;
+}
+.social-icons .twitter {
+  background: #33ccff;
+}
+.social-icons .medium {
+  background: #2f2f2f;
+}
+.social-icons .github {
+  background: #6e5494;
+}
+.social-icons .mail {
+  background: #b20000;
+}
+
+/* Section backgrounds */
+.person {
+  background-color: #edf7fa;
+  padding: 50px;
+  margin: -25px 0;
+}
+
+.edu,
+.yoo,
+.end {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Two-column layout for modules */
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row1 > div {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Text alignment */
+.personal-statement,
+.description-text {
+  text-align: justify;
+  }
+
